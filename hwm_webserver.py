@@ -11,7 +11,7 @@ from urllib.parse import urlparse, parse_qs
 
 sql_username = "username"
 sql_password = "password"
-sql_host = "::1"
+sql_host = "127.0.0.1"
 sql_port = 3306
 sql_database_name = "hwm"
 sql_table_name = "items"
@@ -30,7 +30,7 @@ except mariadb.Error as e:
     sys.exit(1)
 
 class MyServer(SimpleHTTPRequestHandler):
-    path = "/home/jonny/webserver/"
+    path = "/home/user/hwm/"
     def end_headers (self):
         self.send_header('Access-Control-Allow-Origin', '*')
         SimpleHTTPRequestHandler.end_headers(self)
@@ -131,7 +131,7 @@ class MyServer(SimpleHTTPRequestHandler):
             if(filepath[-1] == "/"):
                 filepath = filepath + "index.htm"
             try:
-                f = open(os.path.join("/home/jonny/webserver2/", filepath), "rb")
+                f = open(os.path.join("/home/user/hwm/", filepath), "rb")
             except IOError:
                 self.send_error(404,'File Not Found: %s ' % filepath)
             else:

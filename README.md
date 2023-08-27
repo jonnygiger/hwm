@@ -7,6 +7,8 @@ Start Docker containers for MariaDB and Phpmyadmin.
 
 Configure the MariaDB Database using the provided .sql file.
 
-Run the Python web server.
+Configure the Python file with the MariaDB username, password, and file path.
+
+Install mariadb for Python and run the Python web server.
 
 Start the Python web server automatically as a service (optional).

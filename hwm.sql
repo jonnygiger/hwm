@@ -55,7 +55,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`itemid`, `name_en`, `name_de`, `serial`, `location`, `labeled`, `deleted`, `image`, `document`) VALUES
-(0, 'root', 'root', NULL, 0, 0, NULL, NULL, NULL),
+(0, 'root', 'root', NULL, 0, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 

@@ -1,0 +1,13 @@
+[Unit]
+Description=HWM Webserver
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+RuntimeMaxSec=24h
+user=jonny
+ExecStart=/usr/bin/python3 /home/user/hwm/hwm_webserver.py
+
+[Install]
+WantedBy=multi-user.target

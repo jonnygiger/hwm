@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.7.45">
+  <meta name="generator" content="HWM">
+  <meta charset="UTF-8">
+  <title>Home Ware Management</title>
+  <meta name="viewport" content=
+  "width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="table.js"></script>
+  <script src="search.js"></script>
+</head>
+<body>
+  <div class="flex-container container-noexpand">
+    <div class="row header">
+      <div class="boxedElement" id="home-button">
+        <a class="homeButton" href="/index.htm">Home</a>
+      </div>
+      <div class="boxedElement" id="title-bar">
+        <a class="titleBar">HWM</a>
+      </div>
+      <div class="boxedElement" id="lang-selector">
+        <a class="langbutton" id="langbtn" href="#">EN</a>
+      </div>
+    </div>
+    <div class="row content">
+      <form action="/add_item.htm" method="post">
+        <label for="fname">Item name:</label> <input type="text"
+        id="item_name" name="item_name"><br>
+        <br>
+        <label for="lname">Location:</label> <input type="text" id=
+        "item_location" name="item_location"><br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
